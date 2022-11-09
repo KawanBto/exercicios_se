@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Maior peso utilizando função SE</h1>
+    
+    <div id="resultado"></div>
+    <script>
+
+        let nome1 = prompt("Digite o primeiro nome");
+        let peso1 = Number(prompt("Digite o peso desta pessoa")); 
+        let nome2 = prompt("Digite o segundo nome");
+        let peso2 = Number(prompt("Digite o peso desta segunda pessoa"));
+        let resul;
+        
+        if(peso1 > peso2){
+            
+            resul = "O " + nome1 + " é mais pesado que o " + nome2 + "</br>Pesando " + peso1 + "kg, enquanto" + nome2 + " pesa " + peso2 + "kg";
+            
+        }else{
+
+            resul = "O " + nome2 + " é mais pesado que o " + nome1 + "</br>Pesando " + peso2 + "kg, enquanto " + nome1 + " pesa " + peso1 + "kg";
+
+        }
+
+        document.getElementById("resultado").innerHTML = resul;
+        
+        </script>
+</body>
+</html>

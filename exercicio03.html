@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Mais velho utilizando função SE</h1>
+    
+    <div id="resultado"></div>
+    <script>
+
+        let nome1 = prompt("Digite o primeiro nome");
+        let nasc1 = Number(prompt("Digite o ano de nascimento desta pessoa"));
+
+        let nome2 = prompt("Digite o segundo nome");
+        let nasc2 = Number(prompt("Digite o ano de nascimento desta segunda pessoa"));
+        let resul;
+        let idade1 = Number(2022 - nasc1);
+        let idade2 = Number(2022 - nasc2);
+
+        if(idade1 > idade2){
+            
+            resul = "O " + nome1 + " é mais velho que o " + nome2 + "</br>Idade: " + idade1; 
+            
+        }else{
+
+            resul = "O " + nome2 + " é mais velho que o " + nome1 + "</br>Idade: " + idade2; ;
+
+        }
+
+        document.getElementById("resultado").innerHTML = resul;
+        
+        </script>
+</body>
+</html>

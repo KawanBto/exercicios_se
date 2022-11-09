@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Calculo com função SE</h1>
+    
+    <div id="resultado"></div>
+    <script>
+
+        let num1 = Number(prompt("Digite o primeiro número"));
+        let num2 = Number(prompt("Digite o segundo número")); 
+        let resul;
+
+        if(num1 > num2){
+            
+            resul = "O número " + num1 + " é maior que " + num2;
+
+        }else{
+
+            resul = "O número " + num2 + " é maior que " + num1;
+
+        }
+
+        document.getElementById("resultado").innerHTML = resul;
+        
+        </script>
+</body>
+</html>
